@@ -95,7 +95,7 @@ year = {2023}
 }
 ```
 
-Additional, we thanks greatly for the authors of the following opensource projects:
+Additional, we thank the respective developers of the following open-source projects:
 - [PCAccumulation](https://github.com/prs-eth/PCAccumulation) 
 - [CamLiFlow](https://github.com/MCG-NJU/CamLiFlow) 
 - [Self-mono-sf](https://github.com/visinf/self-mono-sf)

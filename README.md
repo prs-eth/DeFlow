@@ -21,9 +21,10 @@
 <image src="misc/overview.png"/>
 </p>
 
-This repository is the official implementation:
+This repository is the official implementation of paper:
+<b>DeFlow: Self-supervised 3D Motion Estimation of Debris Flow</b>, CVPRW 2023.
 
- <b>DeFlow: Self-supervised 3D Motion Estimation of Debris Flow.</b> CVPRW 2023
+Existing work on scene flow estimation focuses on autonomous driving and mobile robotics, while automated solutions are lacking for motion in nature, such as that exhibited by debris flows. We propose \deflow, a model for 3D motion estimation of debris flows, together with a newly captured dataset. We adopt a novel multi-level sensor fusion architecture and self-supervision to incorporate the inductive biases of the scene. We further adopt a multi-frame temporal processing module to enable flow speed estimation over time. Our model achieves state-of-the-art optical flow and depth estimation on our dataset, and fully automates the motion estimation for debris flows.
 
 ## Installation :national_park:
 First clone our repository:

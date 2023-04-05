@@ -13,7 +13,7 @@
 
 <p align="center"><strong>ETH Zurich</strong></a>
   <h3 align="center"><a href="https://arxiv.org/abs/">Paper</a> 
-  | <a href="">Website</a> | <a href="misc/DeFlow_poster.pdf">Poster</a> | <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/599948">Dataset</a> </h3> 
+  | <a href="https://zhuliyuan.net/deflow">Website</a> | <a href="misc/DeFlow_poster.pdf">Poster</a> | <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/599948">Dataset</a> </h3> 
   <div align="center"></div>
 
 
@@ -43,7 +43,7 @@ pip install -r requirements.txt
 We provide preprocessed debris flow dataset. The preprocessed dataset and checkpoint can be downloaded by running:
 ```shell
 wget --no-check-certificate --show-progress https://share.phys.ethz.ch/~gsg/DeFlow/DeFlow_Dataset.zip
-unzip data.zip
+unzip DeFlow_Dataset.zip
 wget --no-check-certificate --show-progress https://share.phys.ethz.ch/~gsg/DeFlow/checkpoint.zip
 unzip checkpoint.zip
 ```

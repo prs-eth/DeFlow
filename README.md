@@ -13,7 +13,7 @@
 
 <p align="center"><strong>ETH Zurich</strong></a>
   <h3 align="center"><a href="https://arxiv.org/abs/">Paper</a> 
-  | <a href="">Website</a> | <a href="misc/poster.pdf">Poster</a> | <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/599948">Dataset</a> </h3> 
+  | <a href="">Website</a> | <a href="misc/DeFlow_poster.pdf">Poster</a> | <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/599948">Dataset</a> </h3> 
   <div align="center"></div>
 
 

@@ -1,0 +1,85 @@
+dataset:
+  path: data/DeFlow_Dataset/
+  val_ids: data/val_ids.txt
+  test_ids: data/test_ids.txt
+  max_depth: 100.0
+  min_depth: 5.0
+  bbox: [-3.6073, -2.87778, -6.36487, 3.67776, 11.4507, -5.19944]
+  crop_image: []
+  depth_input_ratio: 0.5
+  
+misc:
+  use_gpu: True # If GPU should be used or not
+  seed: 1124
+  mode: train
+  ckpt_path: checkpoints/
+
+optimizer: 
+  name: Adam # SGD or Adam
+
+scheduler:
+  name: MultiStepLR
+  gamma: 0.5
+  milestones: [5, 12, 20, 25]
+
+Adam:
+  learning_rate: 4.0e-4 # Initial learning rate
+  weight_decay: 0.0 # Weight decay weight
+  momentum: 0.8 #Momentum
+  beta_1: 0.9
+  beta_2: 0.999
+
+SGD:
+  learning_rate: 1.0e-2
+  weight_decay: 1.0e-4
+  momentum: 0.9
+  nesterov: true
+
+train:
+  num_workers: 8 # Number of workers used for the data loader
+  max_epoch: 64 # Max number of training epochs
+  n_verbose: 99  # verbose n times per epoch
+  shuffle: True
+  
+  iter_size: 4 # Number of iterration to accumulate the gradients before optimizer step (can be used if the gpu memory is too low)
+  batch_size: 2 # Training batch size
+  grad_clip: 1.0
+  
+  compute_depth: true
+  epoch_depth: 5 
+
+val:
+  num_workers: 8 # Number of workers used for the data loader
+  batch_size: 1 # Validation batch size
+
+test:
+  num_workers: 8 # Number of workers used for the data loader
+  batch_size: 1 
+
+loss:
+  smooth_derivative: first
+  photometric_loss: ssim
+  pyramid_weights: [8.0, 4.0, 2.0, 1.0, 1.0]
+  depth_weight: 0.1
+  flow_weight: 0.9
+  flow_photo_w: 0.85 # weight of photometric loss in total flow loss
+  depth_l1_w: 0.9 # weight of l1 loss in total depth loss
+  photo_max_d: 1
+  depth_data_loss: L1 # L1 or RMSELog
+  
+network:
+  model: deflow
+  num_channels: [3, 32, 64, 96, 128, 192]
+  search_range: 4
+  output_level: 4
+  input_depth: True
+  depth_channels: [1, 8, 16, 24, 32, 64]
+
+wandb:
+  False
+
+augmentation: 
+  enabled: true
+  flip_mode: lr
+  crop_size: [960, 640] # w, h
+

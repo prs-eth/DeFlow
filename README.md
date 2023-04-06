@@ -12,8 +12,8 @@
   </p>
 
 <p align="center"><strong>ETH Zurich</strong></a>
-  <h3 align="center"><a href="https://arxiv.org/abs/">Paper</a> 
-  | <a href="https://zhuliyuan.net/deflow">Website</a> | <a href="misc/DeFlow_poster.pdf">Poster</a> | <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/599948">Dataset</a> </h3> 
+  <h3 align="center"><a href="https://arxiv.org/abs/2304.02569">Arxiv</a> 
+  | <a href="https://zhuliyuan.net/deflow">Website</a> | <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/599948">Dataset</a> </h3> 
   <div align="center"></div>
 
 

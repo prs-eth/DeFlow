@@ -12,7 +12,7 @@
   </p>
 
 <p align="center"><strong>ETH Zurich</strong></a>
-  <h3 align="center"><a href="https://arxiv.org/abs/2304.02569">Arxiv</a> 
+  <h3 align="center"><a href="https://openaccess.thecvf.com/content/CVPR2023W/PCV/papers/Zhu_DeFlow_Self-Supervised_3D_Motion_Estimation_of_Debris_Flow_CVPRW_2023_paper.pdf">Paper</a> 
   | <a href="https://zhuliyuan.net/deflow">Website</a> | <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/599948">Dataset</a> </h3> 
   <div align="center"></div>
 

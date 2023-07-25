@@ -6,7 +6,7 @@ from models.deflow import DeFlowNet
 from models.raft import RAFT
 from libs.dataloader import get_dataloaders
 from libs.trainer import Trainer
-from libs.losses import SceneFlow_Loss, optical_flow_ft_loss
+from libs.losses import SceneFlow_Loss
 from toolbox.utils import setup_seed
 from omegaconf import DictConfig
 import argparse
@@ -35,9 +35,6 @@ def instantiate_config(cfg: dict):
     if cfg.network.model == 'deflow':
         instances['model'] = DeFlowNet(cfg)
         instances['loss'] = SceneFlow_Loss(cfg)
-    elif cfg.network.model == 'raft':
-        instances['model'] = RAFT(cfg.network)
-        instances['loss'] = optical_flow_ft_loss(cfg)
     else: 
         raise NotImplementedError('Unknown model! Instantiation fails!')
     

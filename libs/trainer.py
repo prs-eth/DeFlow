@@ -181,7 +181,7 @@ class Trainer(object):
         for c_iter in range(num_iter): # loop through this epoch   
             ##################################
             
-            inputs = c_loader_iter.next()
+            inputs = next(c_loader_iter)
             ##################################
             # forward pass
             # with torch.autograd.detect_anomaly():

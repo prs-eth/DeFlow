@@ -44,7 +44,7 @@ pip install -r requirements.txt
 We provide preprocessed debris flow dataset. The preprocessed dataset and checkpoint can be downloaded by running:
 ```shell
 wget --no-check-certificate --show-progress https://share.phys.ethz.ch/~gsg/DeFlow/DeFlow_Dataset.zip
-unzip DeFlow_Dataset.zip
+unzip DeFlow_Dataset.zip -d data
 wget --no-check-certificate --show-progress https://share.phys.ethz.ch/~gsg/DeFlow/checkpoint.zip
 unzip checkpoint.zip
 ```
